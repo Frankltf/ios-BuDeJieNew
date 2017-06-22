@@ -23,6 +23,15 @@
 		8478F4571EFA74DD004812EB /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4561EFA74DD004812EB /* UIBarButtonItem+Item.m */; };
 		8478F45A1EFB5D24004812EB /* XMGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4591EFB5D24004812EB /* XMGNavigationController.m */; };
 		8478F4641EFB602F004812EB /* XMGSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4631EFB602F004812EB /* XMGSettingTableViewController.m */; };
+		8478F46B1EFBBF5C004812EB /* XMGAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F46A1EFBBF5C004812EB /* XMGAdViewController.m */; };
+		8496EE541EFBC2D5007E30C7 /* XMGAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8496EE531EFBC2D5007E30C7 /* XMGAdViewController.xib */; };
+		8496EE5D1EFBCA96007E30C7 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8496EE561EFBCA96007E30C7 /* LaunchImage-568h@2x.png */; };
+		8496EE5E1EFBCA96007E30C7 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8496EE571EFBCA96007E30C7 /* LaunchImage-700-568h@2x.png */; };
+		8496EE5F1EFBCA96007E30C7 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8496EE581EFBCA96007E30C7 /* LaunchImage-700@2x.png */; };
+		8496EE601EFBCA96007E30C7 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8496EE591EFBCA96007E30C7 /* LaunchImage-800-667h@2x.png */; };
+		8496EE611EFBCA96007E30C7 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8496EE5A1EFBCA96007E30C7 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		8496EE621EFBCA96007E30C7 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8496EE5B1EFBCA96007E30C7 /* LaunchImage.png */; };
+		8496EE631EFBCA96007E30C7 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8496EE5C1EFBCA96007E30C7 /* LaunchImage@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +76,16 @@
 		8478F4591EFB5D24004812EB /* XMGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNavigationController.m; sourceTree = "<group>"; };
 		8478F4621EFB602F004812EB /* XMGSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSettingTableViewController.h; sourceTree = "<group>"; };
 		8478F4631EFB602F004812EB /* XMGSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGSettingTableViewController.m; sourceTree = "<group>"; };
+		8478F4691EFBBF5C004812EB /* XMGAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAdViewController.h; sourceTree = "<group>"; };
+		8478F46A1EFBBF5C004812EB /* XMGAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAdViewController.m; sourceTree = "<group>"; };
+		8496EE531EFBC2D5007E30C7 /* XMGAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGAdViewController.xib; sourceTree = "<group>"; };
+		8496EE561EFBCA96007E30C7 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		8496EE571EFBCA96007E30C7 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		8496EE581EFBCA96007E30C7 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		8496EE591EFBCA96007E30C7 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		8496EE5A1EFBCA96007E30C7 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		8496EE5B1EFBCA96007E30C7 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		8496EE5C1EFBCA96007E30C7 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +140,7 @@
 		8478F3FB1EFA2E45004812EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8496EE551EFBCA96007E30C7 /* 启动图片 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,6 +157,7 @@
 		8478F4201EFA30FB004812EB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8478F4651EFBBF14004812EB /* Ad */,
 				8478F45B1EFB5FBD004812EB /* Setting */,
 				8478F4391EFA30FB004812EB /* Publish */,
 				8478F4211EFA30FB004812EB /* Essence */,
@@ -404,6 +425,55 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8478F4651EFBBF14004812EB /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				8478F4661EFBBF14004812EB /* Controller */,
+				8478F4671EFBBF14004812EB /* Model */,
+				8478F4681EFBBF14004812EB /* View */,
+			);
+			path = Ad;
+			sourceTree = "<group>";
+		};
+		8478F4661EFBBF14004812EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8478F4691EFBBF5C004812EB /* XMGAdViewController.h */,
+				8478F46A1EFBBF5C004812EB /* XMGAdViewController.m */,
+				8496EE531EFBC2D5007E30C7 /* XMGAdViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8478F4671EFBBF14004812EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8478F4681EFBBF14004812EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8496EE551EFBCA96007E30C7 /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				8496EE561EFBCA96007E30C7 /* LaunchImage-568h@2x.png */,
+				8496EE571EFBCA96007E30C7 /* LaunchImage-700-568h@2x.png */,
+				8496EE581EFBCA96007E30C7 /* LaunchImage-700@2x.png */,
+				8496EE591EFBCA96007E30C7 /* LaunchImage-800-667h@2x.png */,
+				8496EE5A1EFBCA96007E30C7 /* LaunchImage-800-Portrait-736h@3x.png */,
+				8496EE5B1EFBCA96007E30C7 /* LaunchImage.png */,
+				8496EE5C1EFBCA96007E30C7 /* LaunchImage@2x.png */,
+			);
+			name = "启动图片";
+			path = "../../../../Users/admin/Downloads/代码 2/04-广告/04*-BuDeJie(控制广告时间)/BuDeJie/启动图片";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -489,8 +559,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8496EE541EFBC2D5007E30C7 /* XMGAdViewController.xib in Resources */,
+				8496EE611EFBCA96007E30C7 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				8478F40B1EFA2E45004812EB /* LaunchScreen.storyboard in Resources */,
+				8496EE631EFBCA96007E30C7 /* LaunchImage@2x.png in Resources */,
+				8496EE5E1EFBCA96007E30C7 /* LaunchImage-700-568h@2x.png in Resources */,
+				8496EE601EFBCA96007E30C7 /* LaunchImage-800-667h@2x.png in Resources */,
+				8496EE5D1EFBCA96007E30C7 /* LaunchImage-568h@2x.png in Resources */,
+				8496EE621EFBCA96007E30C7 /* LaunchImage.png in Resources */,
 				8478F4081EFA2E45004812EB /* Assets.xcassets in Resources */,
+				8496EE5F1EFBCA96007E30C7 /* LaunchImage-700@2x.png in Resources */,
 				8478F4061EFA2E45004812EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +589,7 @@
 			files = (
 				8478F4411EFA3159004812EB /* XMGEssenceViewController.m in Sources */,
 				8478F45A1EFB5D24004812EB /* XMGNavigationController.m in Sources */,
+				8478F46B1EFBBF5C004812EB /* XMGAdViewController.m in Sources */,
 				8478F4571EFA74DD004812EB /* UIBarButtonItem+Item.m in Sources */,
 				8478F4441EFA316E004812EB /* XMGFriendTrendViewController.m in Sources */,
 				8478F44A1EFA31C3004812EB /* XMGMeTableViewController.m in Sources */,
