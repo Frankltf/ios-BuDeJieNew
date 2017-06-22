@@ -22,6 +22,7 @@
 		8478F4541EFA4B9F004812EB /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4531EFA4B9F004812EB /* UIImage+Image.m */; };
 		8478F4571EFA74DD004812EB /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4561EFA74DD004812EB /* UIBarButtonItem+Item.m */; };
 		8478F45A1EFB5D24004812EB /* XMGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4591EFB5D24004812EB /* XMGNavigationController.m */; };
+		8478F4641EFB602F004812EB /* XMGSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4631EFB602F004812EB /* XMGSettingTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		8478F4561EFA74DD004812EB /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
 		8478F4581EFB5D24004812EB /* XMGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGNavigationController.h; sourceTree = "<group>"; };
 		8478F4591EFB5D24004812EB /* XMGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNavigationController.m; sourceTree = "<group>"; };
+		8478F4621EFB602F004812EB /* XMGSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSettingTableViewController.h; sourceTree = "<group>"; };
+		8478F4631EFB602F004812EB /* XMGSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGSettingTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +108,6 @@
 		8478F3FA1EFA2E45004812EB /* Budejienew */ = {
 			isa = PBXGroup;
 			children = (
-				8478F4391EFA30FB004812EB /* Publish */,
 				8478F4201EFA30FB004812EB /* Classes */,
 				8478F4041EFA2E45004812EB /* Main.storyboard */,
 				8478F4071EFA2E45004812EB /* Assets.xcassets */,
@@ -135,6 +137,8 @@
 		8478F4201EFA30FB004812EB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8478F45B1EFB5FBD004812EB /* Setting */,
+				8478F4391EFA30FB004812EB /* Publish */,
 				8478F4211EFA30FB004812EB /* Essence */,
 				8478F4251EFA30FB004812EB /* FriendTrend */,
 				8478F4291EFA30FB004812EB /* Main */,
@@ -330,8 +334,7 @@
 				8478F43B1EFA30FB004812EB /* Model */,
 				8478F43C1EFA30FB004812EB /* View */,
 			);
-			name = Publish;
-			path = Classes/Publish;
+			path = Publish;
 			sourceTree = "<group>";
 		};
 		8478F43A1EFA30FB004812EB /* Controller */ = {
@@ -366,6 +369,39 @@
 				8478F4561EFA74DD004812EB /* UIBarButtonItem+Item.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		8478F45B1EFB5FBD004812EB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8478F45C1EFB5FBD004812EB /* Controller */,
+				8478F45D1EFB5FBD004812EB /* Model */,
+				8478F45E1EFB5FBD004812EB /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8478F45C1EFB5FBD004812EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8478F4621EFB602F004812EB /* XMGSettingTableViewController.h */,
+				8478F4631EFB602F004812EB /* XMGSettingTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8478F45D1EFB5FBD004812EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8478F45E1EFB5FBD004812EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +516,7 @@
 				8478F44A1EFA31C3004812EB /* XMGMeTableViewController.m in Sources */,
 				8478F4541EFA4B9F004812EB /* UIImage+Image.m in Sources */,
 				8478F43E1EFA30FB004812EB /* main.m in Sources */,
+				8478F4641EFB602F004812EB /* XMGSettingTableViewController.m in Sources */,
 				8478F4501EFA41C4004812EB /* XMGTabBarController.m in Sources */,
 				8478F43D1EFA30FB004812EB /* AppDelegate.m in Sources */,
 				8478F44D1EFA31D8004812EB /* XMGNewViewController.m in Sources */,
@@ -686,6 +723,7 @@
 				8478F41C1EFA2E45004812EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8478F41D1EFA2E45004812EB /* Build configuration list for PBXNativeTarget "BudejienewUITests" */ = {
 			isa = XCConfigurationList;
@@ -694,6 +732,7 @@
 				8478F41F1EFA2E45004812EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,8 +7,8 @@
 //
 
 #import "XMGNavigationController.h"
-
-@interface XMGNavigationController ()
+#import "UIBarButtonItem+Item.h"
+@interface XMGNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -20,15 +20,29 @@
     attr[NSFontAttributeName]=[UIFont boldSystemFontOfSize:20];
     [navBar setTitleTextAttributes:attr];
 }
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if(self.childViewControllers.count>0){
+                viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem backItemWithImage:[UIImage imageNamed:@"navigationButtonReturn"] heightImage:[UIImage imageNamed:@"navigationButtonReturnClick"] target:self action:@selector(backButton)];
+    }
+    [super pushViewController:viewController animated:animated];
+}
+-(void)backButton{
+    [self popViewControllerAnimated:YES];
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.interactivePopGestureRecognizer.delegate = self;
     // Do any additional setup after loading the view.
 }
-
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    return self.childViewControllers.count > 1;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

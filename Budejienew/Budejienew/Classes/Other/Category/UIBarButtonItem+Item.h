@@ -10,5 +10,6 @@
 
 @interface UIBarButtonItem (Item)
 +(UIBarButtonItem *)itemWithImage:(UIImage *)image heightImage:(UIImage *)heightImage target:(nullable id)target action:(SEL)action;
++(UIBarButtonItem *)backItemWithImage:(UIImage *)image heightImage:(UIImage *)heightImage target:(nullable id)target action:(SEL)action;
 +(UIBarButtonItem *)itemWithImageS:(UIImage *)image heightImage:(UIImage *)heightImage target:(nullable id)target action:(SEL)action;
 @end

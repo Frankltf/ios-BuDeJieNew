@@ -1,44 +1,29 @@
 //
-//  XMGMeTableViewController.m
+//  XMGSettingTableViewController.m
 //  Budejienew
 //
-//  Created by admin on 2017/6/21.
+//  Created by admin on 2017/6/22.
 //  Copyright © 2017年 admin. All rights reserved.
 //
 
-#import "XMGMeTableViewController.h"
-#import "UIBarButtonItem+Item.h"
 #import "XMGSettingTableViewController.h"
-@interface XMGMeTableViewController ()
+
+@interface XMGSettingTableViewController ()
 
 @end
 
-@implementation XMGMeTableViewController
+@implementation XMGSettingTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupNavBar];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
--(void)setupNavBar{
-    UIBarButtonItem *settingItem=[UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon"] heightImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(dongzuo)];
-    UIBarButtonItem *nightItem=[UIBarButtonItem itemWithImageS:[UIImage imageNamed:@"mine-moon-icon"] heightImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(nightOrDay:)];
-    self.navigationItem.rightBarButtonItems=@[settingItem,nightItem];
-    self.navigationItem.title=@"我的";
-}
--(void)dongzuo{
-    XMGSettingTableViewController *setting=[[XMGSettingTableViewController alloc]init];
-    setting.hidesBottomBarWhenPushed=YES;
-    [self.navigationController pushViewController:setting animated:YES];
-    NSLog(@"%d",333);
-}
--(void)nightOrDay:(UIButton *)button{
-    button.selected=!button.selected;
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
