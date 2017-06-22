@@ -28,6 +28,9 @@
     UIBarButtonItem *nightItem=[UIBarButtonItem itemWithImageS:[UIImage imageNamed:@"mine-moon-icon"] heightImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(nightOrDay:)];
     self.navigationItem.rightBarButtonItems=@[settingItem,nightItem];
     self.navigationItem.title=@"我的";
+    
+
+    
 }
 -(void)dongzuo{
     NSLog(@"%d",333);

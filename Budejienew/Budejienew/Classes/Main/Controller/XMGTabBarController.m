@@ -13,6 +13,8 @@
 #import "XMGPublishViewController.h"
 #import "XMGFriendTrendViewController.h"
 #import "UIImage+Image.h"
+#import "XMGNavigationController.h"
+
 @interface XMGTabBarController ()
 
 @end
@@ -39,22 +41,22 @@
 }
 -(void)setupAllChildViewController{
     XMGEssenceViewController *essence=[[XMGEssenceViewController alloc]init];
-    UINavigationController *nav1=[[UINavigationController alloc]initWithRootViewController:essence];
+    XMGNavigationController *nav1=[[XMGNavigationController alloc]initWithRootViewController:essence];
     [self addChildViewController:nav1];
     
     XMGNewViewController *new=[[XMGNewViewController alloc]init];
-    UINavigationController *nav2=[[UINavigationController alloc]initWithRootViewController:new];
+    XMGNavigationController *nav2=[[XMGNavigationController alloc]initWithRootViewController:new];
     [self addChildViewController:nav2];
     
     XMGPublishViewController *publish=[[XMGPublishViewController alloc]init];
     [self addChildViewController:publish];
     
     XMGFriendTrendViewController *friendTrend=[[XMGFriendTrendViewController alloc]init];
-    UINavigationController *nav4=[[UINavigationController alloc]initWithRootViewController:friendTrend];
+    XMGNavigationController *nav4=[[XMGNavigationController alloc]initWithRootViewController:friendTrend];
     [self addChildViewController:nav4];
     
     XMGMeTableViewController *me=[[XMGMeTableViewController alloc]init];
-    UINavigationController *nav5=[[UINavigationController alloc]initWithRootViewController:me];
+    XMGNavigationController *nav5=[[XMGNavigationController alloc]initWithRootViewController:me];
     [self addChildViewController:nav5];
 }
 -(void)setupAllTitleButton{

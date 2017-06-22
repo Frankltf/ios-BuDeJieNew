@@ -21,6 +21,7 @@
 		8478F4501EFA41C4004812EB /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F44F1EFA41C4004812EB /* XMGTabBarController.m */; };
 		8478F4541EFA4B9F004812EB /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4531EFA4B9F004812EB /* UIImage+Image.m */; };
 		8478F4571EFA74DD004812EB /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4561EFA74DD004812EB /* UIBarButtonItem+Item.m */; };
+		8478F45A1EFB5D24004812EB /* XMGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4591EFB5D24004812EB /* XMGNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		8478F4531EFA4B9F004812EB /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		8478F4551EFA74DD004812EB /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
 		8478F4561EFA74DD004812EB /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		8478F4581EFB5D24004812EB /* XMGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGNavigationController.h; sourceTree = "<group>"; };
+		8478F4591EFB5D24004812EB /* XMGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,8 @@
 			children = (
 				8478F44E1EFA41C4004812EB /* XMGTabBarController.h */,
 				8478F44F1EFA41C4004812EB /* XMGTabBarController.m */,
+				8478F4581EFB5D24004812EB /* XMGNavigationController.h */,
+				8478F4591EFB5D24004812EB /* XMGNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -469,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8478F4411EFA3159004812EB /* XMGEssenceViewController.m in Sources */,
+				8478F45A1EFB5D24004812EB /* XMGNavigationController.m in Sources */,
 				8478F4571EFA74DD004812EB /* UIBarButtonItem+Item.m in Sources */,
 				8478F4441EFA316E004812EB /* XMGFriendTrendViewController.m in Sources */,
 				8478F44A1EFA31C3004812EB /* XMGMeTableViewController.m in Sources */,
