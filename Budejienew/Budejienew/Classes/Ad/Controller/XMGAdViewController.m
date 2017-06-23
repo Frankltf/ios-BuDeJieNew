@@ -9,14 +9,10 @@
 
 #import "XMGAdViewController.h"
 #import <AFNetworking/AFNetworking.h>
-
-//#define XMGScreenW [UIScreen mainScreen].bounds.size.width
-//#define XMGScreenH [UIScreen mainScreen].bounds.size.height
-//#define iphone6P (XMGScreenH === 736)
-//#define iphone6 (XMGScreenH === 667)
-//#define iphone5 (XMGScreenH === 568)
-//#define iphone4 (XMGScreenH === 480)
-//#define XMGScreenW [UIScreen mainScreen].bounds.size.width
+#import <HP_MJExtension/MJExtension.h>
+#import "XMGAdItem.h"
+#import <UIImageView+WebCache.h>
+#import "XMGTabBarController.h"
 
 #define XMGScreenW [UIScreen mainScreen].bounds.size.width
 #define XMGScreenH [UIScreen mainScreen].bounds.size.height
@@ -29,16 +25,59 @@
 @property (weak, nonatomic) IBOutlet UIImageView *launchImage;
 @property (weak, nonatomic) IBOutlet UIView *addContainerView;
 @property (weak, nonatomic) IBOutlet UIButton *skipBtn;
+@property (nonatomic,weak) UIImageView *adView;
+@property (nonatomic,strong) XMGAdItem *adItem;
+@property (nonatomic,weak)NSTimer *timer;
 
 @end
 
 @implementation XMGAdViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setuplaunchImage];
     [self loadAdData];
+    [self setupTimer];
     // Do any additional setup after loading the view.
+}
+-(UIImageView *)adView{
+    if(_adView == nil){
+        UIImageView *imageView=[[UIImageView alloc]init];
+        [self.addContainerView addSubview:imageView];
+        UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(toAd)];
+        [imageView addGestureRecognizer:tap];
+        imageView.userInteractionEnabled=YES;
+        _adView=imageView;
+    }
+    return _adView;
+}
+-(void)setupTimer{
+    _timer=[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeChange) userInfo:nil repeats:YES];
+}
+-(void)timeChange{
+    static int i=3;
+    if(i==0){
+        [self jump];
+        return;
+    }
+    i--;
+    [_skipBtn setTitle:[NSString stringWithFormat:@"跳转 0%d",i] forState:UIControlStateNormal];
+}
+-(void)toAd{
+    NSURL *url=[NSURL URLWithString:_adItem.ori_curl];
+    UIApplication *app=[UIApplication sharedApplication];
+    if([app canOpenURL:url]){
+        [app openURL:url];
+    }
+}
+-(void)jump{
+    XMGTabBarController *tabBar=[[XMGTabBarController alloc]init];
+    [UIApplication sharedApplication].keyWindow.rootViewController=tabBar;
+    [_timer invalidate];
+}
+- (IBAction)jumpClick:(id)sender {
+    [self jump];
 }
 -(void)loadAdData{
     AFHTTPSessionManager *mr=[AFHTTPSessionManager manager];
@@ -46,8 +85,12 @@
     NSMutableDictionary *parameters=[NSMutableDictionary dictionary];
     parameters[@"code2"]=code2;
     [mr GET:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        NSLog(@"%@",responseObject);
+        [responseObject writeToFile:@"/ios3/ios-BuDeJieNew/Budejienew/ad.plist" atomically:YES];
+        NSDictionary *adDict=[responseObject[@"ad"] lastObject];
+        _adItem=[XMGAdItem mj_objectWithKeyValues:adDict];
+        CGFloat h=XMGScreenW/_adItem.w * _adItem.h;
+        self.adView.frame=CGRectMake(0, 0, XMGScreenW, h);
+        [self.adView sd_setImageWithURL:[NSURL URLWithString:_adItem.w_picurl]];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
     }];

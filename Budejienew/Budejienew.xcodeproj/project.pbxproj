@@ -32,6 +32,7 @@
 		8478F4641EFB602F004812EB /* XMGSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F4631EFB602F004812EB /* XMGSettingTableViewController.m */; };
 		8478F46B1EFBBF5C004812EB /* XMGAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F46A1EFBBF5C004812EB /* XMGAdViewController.m */; };
 		8496EE541EFBC2D5007E30C7 /* XMGAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8496EE531EFBC2D5007E30C7 /* XMGAdViewController.xib */; };
+		8496EE691EFCADC1007E30C7 /* XMGAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8496EE681EFCADC1007E30C7 /* XMGAdItem.m */; };
 		A1AF70DEFFB5DB68D1173C59 /* libPods-Budejienew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA287AA8D703B5CF0DE80D /* libPods-Budejienew.a */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,8 @@
 		8478F4691EFBBF5C004812EB /* XMGAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAdViewController.h; sourceTree = "<group>"; };
 		8478F46A1EFBBF5C004812EB /* XMGAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAdViewController.m; sourceTree = "<group>"; };
 		8496EE531EFBC2D5007E30C7 /* XMGAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGAdViewController.xib; sourceTree = "<group>"; };
+		8496EE671EFCADC1007E30C7 /* XMGAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAdItem.h; sourceTree = "<group>"; };
+		8496EE681EFCADC1007E30C7 /* XMGAdItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAdItem.m; sourceTree = "<group>"; };
 		9B147FB9A732C03A46B4FC84 /* Pods-Budejienew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budejienew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Budejienew/Pods-Budejienew.debug.xcconfig"; sourceTree = "<group>"; };
 		E2C783C25BA4619F26CE5624 /* Pods-Budejienew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budejienew.release.xcconfig"; path = "Pods/Target Support Files/Pods-Budejienew/Pods-Budejienew.release.xcconfig"; sourceTree = "<group>"; };
 		E5AA287AA8D703B5CF0DE80D /* libPods-Budejienew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Budejienew.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -477,6 +480,8 @@
 		8478F4671EFBBF14004812EB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8496EE671EFCADC1007E30C7 /* XMGAdItem.h */,
+				8496EE681EFCADC1007E30C7 /* XMGAdItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -673,6 +678,7 @@
 				8478F4501EFA41C4004812EB /* XMGTabBarController.m in Sources */,
 				8478F43D1EFA30FB004812EB /* AppDelegate.m in Sources */,
 				8478F44D1EFA31D8004812EB /* XMGNewViewController.m in Sources */,
+				8496EE691EFCADC1007E30C7 /* XMGAdItem.m in Sources */,
 				8478F4471EFA31A2004812EB /* XMGPublishViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
