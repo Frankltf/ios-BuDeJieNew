@@ -8,16 +8,65 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>ETExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>HP_MJExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>KissXML.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>Pods-Budejienew.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2672CA0E295BEAA3DD4A17B9812E647B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38594678463483F1C8C04730BB6D12DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>409E5D9EDA4A8B63AF49BD26CC598C81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6A77B15D6DD50BB511973CD66E337B7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE1F47F34B24ED4429ABD8B7AE03874A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

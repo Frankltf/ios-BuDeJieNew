@@ -8,6 +8,7 @@
 
 #import "XMGNewViewController.h"
 #import "UIBarButtonItem+Item.h"
+#import "XMGSubTabTableViewController.h"
 @interface XMGNewViewController ()
 
 @end
@@ -25,6 +26,8 @@
     self.navigationItem.titleView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
 }
 -(void)dongzuo{
+    XMGSubTabTableViewController *subTab=[[XMGSubTabTableViewController alloc]init];
+    [self.navigationController pushViewController:subTab animated:YES];
     NSLog(@"%d",333);
 }
 - (void)didReceiveMemoryWarning {
