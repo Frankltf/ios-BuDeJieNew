@@ -60,6 +60,11 @@
                     <constraint firstItem="RSl-tS-CJa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qzN-yT-oLl"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomTitle" destination="rMP-JH-StX" id="lRl-oD-8IC"/>
+                <outlet property="imageface" destination="Lst-Lx-MPN" id="sYz-aO-f3j"/>
+                <outlet property="topTitle" destination="tyV-yn-k1G" id="4rG-p7-4VU"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>
