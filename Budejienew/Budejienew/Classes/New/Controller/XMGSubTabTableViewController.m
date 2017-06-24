@@ -22,6 +22,7 @@
     [super viewDidLoad];
     [self loadData];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XMGSubTagViewCell class]) bundle:nil] forCellReuseIdentifier:ID];
+    self.title=@"推荐标签";
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

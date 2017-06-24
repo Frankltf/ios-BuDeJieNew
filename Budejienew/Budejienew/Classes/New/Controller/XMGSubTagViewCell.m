@@ -22,10 +22,15 @@
     _item=item;
     _topTitle.text=item.theme_name;
     _bottomTitle.text=item.sub_number;
+    
     [_imageface sd_setImageWithURL:[NSURL URLWithString:item.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
 }
+
 - (void)awakeFromNib {
     [super awakeFromNib];
+    _imageface.layer.cornerRadius=30;
+    _imageface.layer.masksToBounds=YES;
+    
     // Initialization code
 }
 
