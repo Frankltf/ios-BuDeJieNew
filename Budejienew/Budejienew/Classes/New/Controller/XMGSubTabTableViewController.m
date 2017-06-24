@@ -57,15 +57,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    XMGSubTagViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
 //    if(cell==nil){
 //        //cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
 //        cell=[[NSBundle mainBundle]loadNibNamed:NSStringFromClass([XMGSubTagViewCell class]) owner:nil options:nil][0];
 //    }
     
     XMGSubTabItem *item=self.arr[indexPath.row];
-    cell.textLabel.text=item.theme_name;
-   // cell.item=item;
+    //cell.textLabel.text=item.theme_name;
+    cell.item=item;
     // Configure the cell...
     
     return cell;
