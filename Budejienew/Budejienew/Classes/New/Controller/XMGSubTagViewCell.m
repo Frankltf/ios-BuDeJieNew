@@ -22,7 +22,14 @@
     _item=item;
     _topTitle.text=item.theme_name;
     _bottomTitle.text=item.sub_number;
-    
+    NSString *numstr=[[NSString alloc]init];
+    NSInteger num=item.sub_number.integerValue;
+    if(num>10000){
+        CGFloat numf=num/10000;
+        numstr=[NSString stringWithFormat:@"%.1f万人订阅",numf];
+        [numstr stringByReplacingOccurrencesOfString:@".0" withString:@""];
+    }
+    _bottomTitle.text=numstr;
     [_imageface sd_setImageWithURL:[NSURL URLWithString:item.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
 }
 
