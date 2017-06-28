@@ -40,6 +40,8 @@
 		84BF6E4A1F0345B20064D23C /* XMGFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BF6E491F0345B20064D23C /* XMGFriendTrendViewController.xib */; };
 		84BF6E4E1F03519F0064D23C /* XMGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BF6E4C1F03519F0064D23C /* XMGLoginViewController.m */; };
 		84BF6E4F1F03519F0064D23C /* XMGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BF6E4D1F03519F0064D23C /* XMGLoginViewController.xib */; };
+		84BF6E521F035CA50064D23C /* XMGRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BF6E511F035CA50064D23C /* XMGRegisterView.m */; };
+		84BF6E561F035E610064D23C /* XMGRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BF6E551F035E610064D23C /* XMGRegisterView.xib */; };
 		A1AF70DEFFB5DB68D1173C59 /* libPods-Budejienew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA287AA8D703B5CF0DE80D /* libPods-Budejienew.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +110,9 @@
 		84BF6E4B1F03519F0064D23C /* XMGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLoginViewController.h; sourceTree = "<group>"; };
 		84BF6E4C1F03519F0064D23C /* XMGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLoginViewController.m; sourceTree = "<group>"; };
 		84BF6E4D1F03519F0064D23C /* XMGLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGLoginViewController.xib; sourceTree = "<group>"; };
+		84BF6E501F035CA50064D23C /* XMGRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRegisterView.h; sourceTree = "<group>"; };
+		84BF6E511F035CA50064D23C /* XMGRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRegisterView.m; sourceTree = "<group>"; };
+		84BF6E551F035E610064D23C /* XMGRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGRegisterView.xib; sourceTree = "<group>"; };
 		9B147FB9A732C03A46B4FC84 /* Pods-Budejienew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budejienew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Budejienew/Pods-Budejienew.debug.xcconfig"; sourceTree = "<group>"; };
 		E2C783C25BA4619F26CE5624 /* Pods-Budejienew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budejienew.release.xcconfig"; path = "Pods/Target Support Files/Pods-Budejienew/Pods-Budejienew.release.xcconfig"; sourceTree = "<group>"; };
 		E5AA287AA8D703B5CF0DE80D /* libPods-Budejienew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Budejienew.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,6 +291,9 @@
 		8478F4281EFA30FB004812EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84BF6E501F035CA50064D23C /* XMGRegisterView.h */,
+				84BF6E511F035CA50064D23C /* XMGRegisterView.m */,
+				84BF6E551F035E610064D23C /* XMGRegisterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -629,6 +637,7 @@
 				25F338541EFC0C100017F765 /* LaunchImage-568h@2x.png in Resources */,
 				25F338591EFC0C100017F765 /* LaunchImage.png in Resources */,
 				84BF6E4F1F03519F0064D23C /* XMGLoginViewController.xib in Resources */,
+				84BF6E561F035E610064D23C /* XMGRegisterView.xib in Resources */,
 				8478F4081EFA2E45004812EB /* Assets.xcassets in Resources */,
 				25F338561EFC0C100017F765 /* LaunchImage-700@2x.png in Resources */,
 				8478F4061EFA2E45004812EB /* Main.storyboard in Resources */,
@@ -716,6 +725,7 @@
 				8478F44D1EFA31D8004812EB /* XMGNewViewController.m in Sources */,
 				8496EE691EFCADC1007E30C7 /* XMGAdItem.m in Sources */,
 				8478F4471EFA31A2004812EB /* XMGPublishViewController.m in Sources */,
+				84BF6E521F035CA50064D23C /* XMGRegisterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
