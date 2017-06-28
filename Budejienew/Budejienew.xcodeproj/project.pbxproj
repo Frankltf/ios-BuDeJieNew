@@ -37,6 +37,9 @@
 		8478F46B1EFBBF5C004812EB /* XMGAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478F46A1EFBBF5C004812EB /* XMGAdViewController.m */; };
 		8496EE541EFBC2D5007E30C7 /* XMGAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8496EE531EFBC2D5007E30C7 /* XMGAdViewController.xib */; };
 		8496EE691EFCADC1007E30C7 /* XMGAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8496EE681EFCADC1007E30C7 /* XMGAdItem.m */; };
+		84BF6E4A1F0345B20064D23C /* XMGFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BF6E491F0345B20064D23C /* XMGFriendTrendViewController.xib */; };
+		84BF6E4E1F03519F0064D23C /* XMGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BF6E4C1F03519F0064D23C /* XMGLoginViewController.m */; };
+		84BF6E4F1F03519F0064D23C /* XMGLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BF6E4D1F03519F0064D23C /* XMGLoginViewController.xib */; };
 		A1AF70DEFFB5DB68D1173C59 /* libPods-Budejienew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA287AA8D703B5CF0DE80D /* libPods-Budejienew.a */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +104,10 @@
 		8496EE531EFBC2D5007E30C7 /* XMGAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGAdViewController.xib; sourceTree = "<group>"; };
 		8496EE671EFCADC1007E30C7 /* XMGAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAdItem.h; sourceTree = "<group>"; };
 		8496EE681EFCADC1007E30C7 /* XMGAdItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAdItem.m; sourceTree = "<group>"; };
+		84BF6E491F0345B20064D23C /* XMGFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGFriendTrendViewController.xib; sourceTree = "<group>"; };
+		84BF6E4B1F03519F0064D23C /* XMGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLoginViewController.h; sourceTree = "<group>"; };
+		84BF6E4C1F03519F0064D23C /* XMGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLoginViewController.m; sourceTree = "<group>"; };
+		84BF6E4D1F03519F0064D23C /* XMGLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGLoginViewController.xib; sourceTree = "<group>"; };
 		9B147FB9A732C03A46B4FC84 /* Pods-Budejienew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budejienew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Budejienew/Pods-Budejienew.debug.xcconfig"; sourceTree = "<group>"; };
 		E2C783C25BA4619F26CE5624 /* Pods-Budejienew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budejienew.release.xcconfig"; path = "Pods/Target Support Files/Pods-Budejienew/Pods-Budejienew.release.xcconfig"; sourceTree = "<group>"; };
 		E5AA287AA8D703B5CF0DE80D /* libPods-Budejienew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Budejienew.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,6 +268,10 @@
 			children = (
 				8478F4421EFA316E004812EB /* XMGFriendTrendViewController.h */,
 				8478F4431EFA316E004812EB /* XMGFriendTrendViewController.m */,
+				84BF6E491F0345B20064D23C /* XMGFriendTrendViewController.xib */,
+				84BF6E4B1F03519F0064D23C /* XMGLoginViewController.h */,
+				84BF6E4C1F03519F0064D23C /* XMGLoginViewController.m */,
+				84BF6E4D1F03519F0064D23C /* XMGLoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -608,6 +619,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BF6E4A1F0345B20064D23C /* XMGFriendTrendViewController.xib in Resources */,
 				8496EE541EFBC2D5007E30C7 /* XMGAdViewController.xib in Resources */,
 				25F338581EFC0C100017F765 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				8478F40B1EFA2E45004812EB /* LaunchScreen.storyboard in Resources */,
@@ -616,6 +628,7 @@
 				25F338571EFC0C100017F765 /* LaunchImage-800-667h@2x.png in Resources */,
 				25F338541EFC0C100017F765 /* LaunchImage-568h@2x.png in Resources */,
 				25F338591EFC0C100017F765 /* LaunchImage.png in Resources */,
+				84BF6E4F1F03519F0064D23C /* XMGLoginViewController.xib in Resources */,
 				8478F4081EFA2E45004812EB /* Assets.xcassets in Resources */,
 				25F338561EFC0C100017F765 /* LaunchImage-700@2x.png in Resources */,
 				8478F4061EFA2E45004812EB /* Main.storyboard in Resources */,
@@ -688,6 +701,7 @@
 				8478F4411EFA3159004812EB /* XMGEssenceViewController.m in Sources */,
 				8478F45A1EFB5D24004812EB /* XMGNavigationController.m in Sources */,
 				8478F46B1EFBBF5C004812EB /* XMGAdViewController.m in Sources */,
+				84BF6E4E1F03519F0064D23C /* XMGLoginViewController.m in Sources */,
 				8478F4571EFA74DD004812EB /* UIBarButtonItem+Item.m in Sources */,
 				8478F4441EFA316E004812EB /* XMGFriendTrendViewController.m in Sources */,
 				8478F44A1EFA31C3004812EB /* XMGMeTableViewController.m in Sources */,

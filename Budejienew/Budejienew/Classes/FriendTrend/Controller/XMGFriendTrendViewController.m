@@ -8,6 +8,7 @@
 
 #import "XMGFriendTrendViewController.h"
 #import "UIBarButtonItem+Item.h"
+#import "XMGLoginViewController.h"
 @interface XMGFriendTrendViewController ()
 
 @end
@@ -21,11 +22,15 @@
 }
 -(void)setupNavBar{
     self.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] heightImage:[UIImage imageNamed:@"friendsRecommentIcon"] target:self action:@selector(dongzuo)];
-    
     self.navigationItem.title=@"我的关注";
 }
 -(void)dongzuo{
     NSLog(@"%d",222);
+}
+- (IBAction)tologin:(id)sender {
+    XMGLoginViewController *login=[[XMGLoginViewController alloc]init];
+    [self presentViewController:login animated:YES completion:nil];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
