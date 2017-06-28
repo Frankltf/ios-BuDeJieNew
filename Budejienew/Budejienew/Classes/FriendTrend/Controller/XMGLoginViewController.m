@@ -7,8 +7,9 @@
 //
 
 #import "XMGLoginViewController.h"
-
+#import "XMGRegisterView.h"
 @interface XMGLoginViewController ()
+@property (weak, nonatomic) IBOutlet UIView *containView;
 
 @end
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    XMGRegisterView *re=[XMGRegisterView loginView];
+    [self.containView addSubview:re];
     // Do any additional setup after loading the view from its nib.
 }
 - (IBAction)back:(id)sender {

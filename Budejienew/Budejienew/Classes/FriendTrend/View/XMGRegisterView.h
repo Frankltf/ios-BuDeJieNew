@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface XMGRegisterView : UIView
-
++(instancetype)loginView;
++(instancetype)registerView;
 @end
