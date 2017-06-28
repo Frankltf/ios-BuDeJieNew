@@ -5,54 +5,40 @@
 	<key>ad</key>
 	<array>
 		<dict>
+			<key>acct</key>
+			<integer>0</integer>
 			<key>act</key>
 			<integer>1</integer>
-			<key>actt</key>
-			<integer>0</integer>
 			<key>ad_charge</key>
 			<integer>2</integer>
 			<key>ad_title</key>
-			<string></string>
+			<string>真正吃货赵丽颖一部戏吃穷剧组，整整长胖8斤</string>
 			<key>adtd</key>
 			<integer>0</integer>
 			<key>anti_tag</key>
-			<integer>1</integer>
+			<integer>0</integer>
+			<key>appname</key>
+			<string></string>
 			<key>bid</key>
 			<string></string>
 			<key>clklogurl</key>
 			<string></string>
 			<key>curl</key>
-			<string>http://mobads.baidu.com/cpmad.html?url=pZwYTjCEQLILIz3dra4WUvYE5LK9IA6qXh9dmvRE5LNYUNq1ULNzmvRqTvNVQyF9pywdQg7GIgPCpiRzPMPsUHd-nWf3njI-Pi4lpZNWuidWTAnVpv7GTA-8uzRzPMNYUNqWmydsmy-MUWd1uyk_FHcvIgwVgvd-uA-dUHdWTAnhgdqVUvF9uZPxmLNzU7qWpANWp1Y4rjRvrHcdnWbhug9sgv-b5gPzQZwEQAwJQHD_Xyn_IZn_uMn_UAf_Tg6VnBkhmzksXBkWTADVnWDsQau8ugIxug9sgv-bT1YhgdqVUvF9uZPxmvkGmvVGujddiAPuThCsHZNcHM9zpW0YRD9BHA4bTyG8pbuDUb9Afy4lyH78RhY1RR9hIhmkmduhRhPoUMGuny4JwWI8pbwuu-FfwZIBRBuxgvdEmh7bTdqWpA7zuvRqThCsP7Kcmbk8nNt1Ub9hpv4JNAN8ijKoRj7DTdKgNAN8NdfkRD9hTLckUhVfnHK-Ub9xXMFvRMGfpWu1RZuiuAIvRZPRNdmVU-Ihnv4Jiidfi7uJUhGAwA4cwb78X-bkU-FVnd7cuMuhnyPyu-FWpv4lyH78pbmLUhGDyyuiRDwLm-F-TZ-knN7cmW98Ndm4N7GQgLNGuDIifH-7Ny9iH77Jmv9ANYwowbFVpd0kUy9AfhdCRAGVTv4JNA9ANYwCwbdAnNwKp1-RIWuCw-IDpDugwZP8mydCUh-VpA49Uy98nauxgvdEmh7bTdqYmHdVHZIlT-IDXh4Ju-qVXgI2iyIfygFgnauxgvdEmh7bTdqkp1YLm16zPhFbmHuWmWnvmWn1FM7YUHYkPjb3nWDkrHD3F-qxUyqBmyw1gvwWgLPYmgfqNDkfT1NcwMwFuLTYND7iTy4ppv9NNvwYIy6YXWNciLwFfN-kU-GoyR-cygG8pW01ThGBXM9pIvcdiDVYiyIAg1NMpdIsphwYINGfTLK4uM7fHyVBIyIdwvdvHM9sXyukUbdof-wCP19dphf4N7GQgLNMpLPRpadgIR4kwLNJygG3fgNZNDdfyyInILGVXgTVPR98HZ9pRadVIMD3IHIkyNwCPvFdi7bkRjDsIM9KPadFPL7uyAIQQyIvQycdijIYUyILwNNrTRIdp--1XD7of-wbTRIdp--1XD7of-wbTN-muY_VPR9QIZKMIL9sXyukU-GorgRLTHDdiD-gThGWIhdCI1-fp7KaUW7dfh3kRZwNH7K3TZ-hTy4GyHwwNYuYNg-rmMK4PL9FyBd1IR9uTL9pRadVuZ7BNgubrgK4nL7syMIuN7GfIAdPHW7sXHfVNDkfXZK4uM78yhVBTAIfyNwCQNIFPL7ZIyGuTL9KRAwsXyukXD7dwdwPR7-MHZI7NDDVN1NciLwRIb4gNgmYmhInIYNRfidgPR9QID-KrRIRpZI3iR7kTLK4UM78yh_4IR7fgvdMRjDdiAuvXD7FQNNCIzdRNd-1XDDLHgNcygP3fyf4NDdAwvd4iiYdiDVYIy6VX-wnIL9suvukU-GongN4RDNNpZI3TAIhTy4pp1-RybVxTAIfyyIvQycdiDVYUyIQTvdvPd-dHM7ZIyGuTL9pHMGNPLD4N7GQgLKMR7-MIBdBPR9QID-Mw-qMIWI1ND7frR-KHM9sXyukU-GoyNwCQRddIb4luLmVyyInI1-dHA4kX7GfmMKbTgmdiDuYiyIfQNfVTN-muY_VPR9QI7wCHhVMHDVEIH7bNdNvyH9spaY3IguowdNCNj9VHN0kTDdoHgN4Tg9Rybu7iNIuyg9KiidNuZ7gTAILPjNcmW73fHI1uLmVmWNciLwNHgIuNAGung9KPdIFfidvIR4krNwpnZ78yh_4URkLwY-CHM9VIWIuIg-FwNwPmM78yh_4INCvTy4MpYsdiAduU-Gof1NcmMu8yhVuiNCsTy4npYIFHgIlPR9QID-vPdqNPL71NgmVrD-JygP3fHT3INGAwgK4IL9sXyukF-qxUyqBmyw1gv7WmLfqTvwoFhN3mv9YTjYsFhPCUyqb5H0hTvPCUyqb5H0hTZFGmvRqn1DLnau1TZFGmvRqn1DLnauVmgwWp7qWUvw-5H0b&amp;encrypt=open</string>
+			<string>http://www.baidu.com/cb.php?c=IgF_pyfqn0KYTjYs0A7b5HR4nHm4Pj0k0Aw-5yRzPj6sPvRd0ZKET1Ys0Znquj-9m1DzmhmLPvDdPyD1ufKbIjYkPjb3PWDYnWnd0ZNzUjdCIZwsrBtEmLKdQhF9pywdQhPEUitknjczQvwWPWT1P1DkQvw-IA7GUatdrHDvrHfsniq8ugI15LN9pyfquHcYrj0LuHNxnW0srj64n6KzujYs0AFV5H00TZcqn0Kdpyfqn0KEpyfqn0KWpyfqn0KEIv3qn0KsXHY4PHTznf0</string>
 			<key>desc</key>
-			<string></string>
+			<string>明星粉丝团</string>
 			<key>dur</key>
-			<integer>16777215</integer>
-			<key>exp2</key>
-			<dict>
-				<key>e62</key>
-				<dict>
-					<key>ms</key>
-					<integer>25000000</integer>
-				</dict>
-				<key>e64</key>
-				<integer>2</integer>
-				<key>e70</key>
-				<integer>5</integer>
-				<key>e99</key>
-				<integer>1</integer>
-			</dict>
+			<integer>0</integer>
 			<key>fwt</key>
 			<integer>2</integer>
 			<key>h</key>
-			<integer>960</integer>
+			<integer>959</integer>
 			<key>id</key>
-			<integer>8095973</integer>
+			<integer>59169401</integer>
 			<key>iv</key>
 			<integer>0</integer>
-			<key>mimetype</key>
-			<string>image/jpg</string>
 			<key>ori_curl</key>
-			<string>http://www.58.com/?path=zhuce/?utm_source=sem-baidu-qiushi%26spm=e24807e5.zhuce-cpc-kaiping%26utm_campaign=sell%26utm_medium=cpc</string>
+			<string>http://www.baidu.com/cb.php?c=IgF_pyfqn0KYTjYs0A7b5HR4nHm4Pj0k0Aw-5yRzPj6sPvRd0ZKET1Ys0Znquj-9m1DzmhmLPvDdPyD1ufKbIjYkPjb3PWDYnWnd0ZNzUjdCIZwsrBtEmLKdQhF9pywdQhPEUitknjczQvwWPWT1P1DkQvw-IA7GUatdrHDvrHfsniq8ugI15LN9pyfquHcYrj0LuHNxnW0srj64n6KzujYs0AFV5H00TZcqn0Kdpyfqn0KEpyfqn0KWpyfqn0KEIv3qn0KsXHY4PHTznf0</string>
 			<key>phone</key>
 			<string></string>
 			<key>pict</key>
@@ -60,78 +46,52 @@
 			<key>pk</key>
 			<string></string>
 			<key>qk</key>
-			<string>007b88e57c826bda6cb36b33</string>
+			<string>77a55a3ed9ac12bf</string>
 			<key>sb</key>
 			<integer>0</integer>
 			<key>sk</key>
 			<string></string>
-			<key>sms</key>
-			<string></string>
-			<key>sound</key>
-			<integer>0</integer>
 			<key>src</key>
 			<string>mob</string>
 			<key>styt</key>
 			<integer>0</integer>
 			<key>surl</key>
-			<string>www.58.com</string>
+			<string></string>
 			<key>sz</key>
 			<integer>0</integer>
-			<key>theme</key>
-			<string></string>
 			<key>tit</key>
-			<string></string>
+			<string>真正吃货赵丽颖一部戏吃穷剧组，整整长胖8斤</string>
 			<key>type</key>
 			<string>image</string>
 			<key>w</key>
 			<integer>640</integer>
 			<key>w_picurl</key>
-			<string>http://ubmcmm.baidustatic.com/media/v1/0f000D9DdyPeA-ROQlDgv0.jpg</string>
-			<key>wb</key>
-			<string></string>
+			<string>http://gss2.bdstatic.com/5K1IcD3801kUm2zgoZyCKT6zgBYnreHg-_/271564e6-396c-40dd-9224-9738fdf1c0bd.jpeg@s_2,w_640,h_959</string>
 			<key>wi</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>winurl</key>
-			<string>http://wn.pos.baidu.com/adx.php?c=d25pZD03YzgyNmJkYTZjYjM2YjMzAHM9N2M4MjZiZGE2Y2IzNmIzMwB0PTE0OTgyMTE5MTgAc2U9MgBidT02AHByaWNlPVdVem1UZ0FCSUhON2pFcGdXNUlBOGlnZHlGNGdYRUU5V3RjaUp3AGNoYXJnZV9wcmljZT0zMTcAc2hhcmluZ19wcmljZT0zMTcwMDAAd2luX2RzcD02AGNobWQ9MQBiZGlkPQBjcHJvaWQ9AHdkPTgwOTU5NzMAcG9zPTAAYmNobWQ9MAB2PTEAaT1iMTM0NWIzYg&amp;ext=ZmNfdWlkPUMwMkQxMkYzLTMxRjgtNDZDMi1BQjEzLTMwMkUwMTRBQ0RGRSZmY19paWQ9ODE0MTA3JmZjX2V4PTMyNDgyJmZjX2xvPWd6JmZjX3VpZDE9QzAyRDEyRjMtMzFGOC00NkMyLUFCMTMtMzAyRTAxNEFDREZFJmZjX2lpZDE9OTQyOTQ0ODY5JmZjX2V4MT02MDQ4MDAmZmNfbG8xPWd6JmZjX3RrMT1tb2JhZHNfYXBwX3VzZXImZmNfdWlkND1DMDJEMTJGMy0zMUY4LTQ2QzItQUIxMy0zMDJFMDE0QUNERkUmZmNfaWlkND0tMjEyODUwODk4OCZmY19leDQ9MjE2ODImZmNfbG80PWd6JmZjX3RrND1tb2JhZHNfYWRnb2Fs</string>
+			<string>http://mobads-logs.baidu.com/dz.zb?type=9572&amp;ad_id=59169401&amp;appid=e24807e5&amp;s=d9ac12bf77a55a3e&amp;table=1</string>
 		</dict>
 	</array>
 	<key>city</key>
-	<integer>93</integer>
+	<integer>0</integer>
 	<key>clkt</key>
 	<string></string>
-	<key>error_code</key>
-	<integer>0</integer>
-	<key>exp2</key>
-	<dict>
-		<key>e59</key>
-		<integer>8640000</integer>
-		<key>e61</key>
-		<dict>
-			<key>IS_SEND_EVENT_ERROR_LOG</key>
-			<false/>
-		</dict>
-		<key>e76</key>
-		<integer>1</integer>
-	</dict>
 	<key>iap_buy</key>
 	<integer>0</integer>
 	<key>impt</key>
 	<string></string>
 	<key>interval</key>
 	<integer>0</integer>
-	<key>m</key>
-	<integer>0</integer>
 	<key>mode</key>
 	<integer>0</integer>
 	<key>n</key>
 	<integer>1</integer>
 	<key>province</key>
-	<integer>4</integer>
+	<integer>0</integer>
 	<key>req_id</key>
 	<string></string>
 	<key>theme</key>
-	<string>new-1-4</string>
-	<key>u</key>
 	<string></string>
 	<key>x</key>
 	<integer>0</integer>

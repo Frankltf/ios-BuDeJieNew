@@ -11,9 +11,13 @@
 #import "XMGSubTabItem.h"
 #import <HP_MJExtension/MJExtension.h>
 #import "XMGSubTagViewCell.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+
+
  static NSString * const ID=@"cell";
 @interface XMGSubTabTableViewController ()
 @property (nonatomic,strong)NSArray *arr;
+@property (nonatomic,weak)AFHTTPSessionManager *mgr;
 @end
 
 @implementation XMGSubTabTableViewController
@@ -28,9 +32,18 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
+    [_mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
 }
 -(void)loadData{
+    [SVProgressHUD showWithStatus:@"正在加载中"];
     AFHTTPSessionManager *mr=[AFHTTPSessionManager manager];
+    _mgr=mr;
     NSMutableDictionary *parameters=[NSMutableDictionary dictionary];
     parameters[@"a"] = @"tag_recommend";
     parameters[@"action"] = @"sub";
@@ -39,7 +52,9 @@
         [responseObject writeToFile:@"/Users/liutengfei/pratice/ios-BuDeJieNew/Budejienew/subTab.plist" atomically:YES];
         _arr=[XMGSubTabItem mj_objectArrayWithKeyValuesArray:responseObject];
         [self.tableView reloadData];
+        [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD dismiss];
         NSLog(@"%@",error);
     }];
 }
