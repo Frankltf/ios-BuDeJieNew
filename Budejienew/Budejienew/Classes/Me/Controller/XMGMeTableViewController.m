@@ -27,6 +27,9 @@ static NSString * const ID=@"cell";
     [self setupNavBar];
     [self setupFoot];
     [self loadData];
+    self.tableView.sectionHeaderHeight=0;
+    self.tableView.sectionFooterHeight=10;
+    self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
