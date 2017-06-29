@@ -9,10 +9,15 @@
 #import "XMGMeTableViewController.h"
 #import "UIBarButtonItem+Item.h"
 #import "XMGSettingTableViewController.h"
+#import <AFNetworking/AFNetworking.h>
+#import "XMGSquareItem.h"
+#import "XMGSquareCell.h"
+#import <HP_MJExtension/MJExtension.h>
 
 static NSString * const ID=@"cell";
 @interface XMGMeTableViewController ()<UICollectionViewDataSource>
-
+@property (nonatomic,strong)NSArray *squareArr;
+@property(nonatomic,weak)UICollectionView *collectionV;
 @end
 
 @implementation XMGMeTableViewController
@@ -21,11 +26,31 @@ static NSString * const ID=@"cell";
     [super viewDidLoad];
     [self setupNavBar];
     [self setupFoot];
+    [self loadData];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+-(void)loadData{
+    // 1.创建请求会话管理者
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    // 2.拼接请求参数
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"a"] = @"square";
+    parameters[@"c"] = @"topic";
+    [mgr GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [responseObject writeToFile:@"/ios3/ios-BuDeJieNew/Budejienew/square.plist" atomically:nil];
+        NSArray *dicArr=responseObject[@"square_list"];
+        _squareArr=[XMGSquareItem mj_objectArrayWithKeyValuesArray:dicArr];
+        
+        self.tableView.tableFooterView=self.collectionV;
+        [self.collectionV reloadData];
+        NSLog(@"%@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+         NSLog(@"%@",error);
+    }];
 }
 -(void)setupFoot{
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
@@ -40,17 +65,20 @@ static NSString * const ID=@"cell";
     
     
     UICollectionView *collection=[[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, 0, 300) collectionViewLayout:layout];
+    _collectionV=collection;
     collection.backgroundColor=[UIColor redColor];
     self.tableView.tableFooterView=collection;
     collection.dataSource=self;
+    collection.scrollEnabled=NO;
     [collection registerNib:[UINib nibWithNibName:@"XMGSquareCell" bundle:nil] forCellWithReuseIdentifier:ID];
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 10;
+    return self.squareArr.count;
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    UICollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    XMGSquareCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
     cell.backgroundColor=[UIColor blueColor];
+    cell.item=self.squareArr[indexPath.row];
     return cell;
 }
 -(void)setupNavBar{

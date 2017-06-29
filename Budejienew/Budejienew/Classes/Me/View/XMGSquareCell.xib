@@ -39,6 +39,10 @@
                 <constraint firstItem="tcq-Gg-2nZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="cNN-Af-j75"/>
                 <constraint firstItem="dBo-Jv-D1f" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vZu-Us-1lh"/>
             </constraints>
+            <connections>
+                <outlet property="headerImage" destination="tcq-Gg-2nZ" id="lbQ-pp-jdL"/>
+                <outlet property="nameLabel" destination="dBo-Jv-D1f" id="mRk-Z0-5e2"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>
