@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -54,7 +55,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBU-su-fc8">
-                    <rect key="frame" x="0.0" y="95" width="375" height="300"/>
+                    <rect key="frame" x="0.0" y="95" width="750" height="300"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="QAT-5d-crV"/>
                     </constraints>
@@ -81,6 +82,7 @@
                 <constraint firstItem="2OH-GN-Qbi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cMK-5S-WCv"/>
                 <constraint firstItem="YBU-su-fc8" firstAttribute="top" secondItem="qvN-zl-ZpQ" secondAttribute="bottom" constant="40" id="eJC-Mm-b9U"/>
                 <constraint firstItem="qvN-zl-ZpQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="pPH-5V-5ua"/>
+                <constraint firstItem="YBU-su-fc8" firstAttribute="width" secondItem="2OH-GN-Qbi" secondAttribute="width" multiplier="2" id="qBR-vu-zFX"/>
             </constraints>
             <point key="canvasLocation" x="24.5" y="52.5"/>
         </view>

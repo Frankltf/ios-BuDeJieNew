@@ -17,9 +17,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    XMGRegisterView *re=[XMGRegisterView loginView];
+    XMGRegisterView *login=[XMGRegisterView loginView];
+    [self.containView addSubview:login];
+    
+    XMGRegisterView *re=[XMGRegisterView registerView];
     [self.containView addSubview:re];
     // Do any additional setup after loading the view from its nib.
+}
+// viewDidLayoutSubviews:才会根据布局调整控件的尺寸
+- (void)viewDidLayoutSubviews
+{
+    // 一定要调用super
+
+//    // 设置登录view
+//    XMGLoginRegisterView *loginView = self.middleView.subviews[0];
+//    loginView.frame = CGRectMake(0, 0, self.middleView.xmg_width * 0.5, self.middleView.xmg_height);
+//    
+//    // 设置注册view
+//    XMGLoginRegisterView *registerView = self.middleView.subviews[1];
+//    registerView.frame = CGRectMake( self.middleView.xmg_width * 0.5, 0,self.middleView.xmg_width * 0.5, self.middleView.xmg_height);
+//    
+//    // 设置快速登录
+//    XMGFastLoginView *fastLoginView = self.bottomView.subviews.firstObject;
+//    fastLoginView.frame = self.bottomView.bounds;
 }
 - (IBAction)back:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];

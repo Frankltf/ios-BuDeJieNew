@@ -55,7 +55,10 @@
     XMGNavigationController *nav4=[[XMGNavigationController alloc]initWithRootViewController:friendTrend];
     [self addChildViewController:nav4];
     
-    XMGMeTableViewController *me=[[XMGMeTableViewController alloc]init];
+    UIStoryboard *myStoryboard=[UIStoryboard storyboardWithName:NSStringFromClass([XMGMeTableViewController class]) bundle:nil];
+    
+    
+    XMGMeTableViewController *me=[myStoryboard instantiateInitialViewController];
     XMGNavigationController *nav5=[[XMGNavigationController alloc]initWithRootViewController:me];
     [self addChildViewController:nav5];
 }
