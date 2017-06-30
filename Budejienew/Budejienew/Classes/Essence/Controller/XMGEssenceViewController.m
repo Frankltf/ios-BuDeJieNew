@@ -8,6 +8,7 @@
 
 #import "XMGEssenceViewController.h"
 #import "UIBarButtonItem+Item.h"
+#define xmg_w
 @interface XMGEssenceViewController ()
 
 @end
@@ -15,12 +16,45 @@
 @implementation XMGEssenceViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor redColor];
     [self setupNavBar];
+    [self setupScrollview];
+    [self setupTitleView];
     // Do any additional setup after loading the view.
 }
-
+-(void)setupTitleView{
+    UIView *titleView=[[UIView alloc]init];
+    titleView.backgroundColor=[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    
+    titleView.frame=CGRectMake(0, 64, self.view.frame.size.width, 35);
+    [self.view addSubview:titleView];
+    
+    [self setupTitleButtons:titleView];
+    [self setupTitleUnderline];
+}
+-(void)setupTitleButtons:(UIView *)titleView{
+    NSArray *titles=@[@"全部",@"视频",@"声音",@"图片",@"段子"];
+    NSUInteger count=titles.count;
+    CGFloat titleBtutonW=self.view.frame.size.width/count;
+    CGFloat titleButtonH=titleView.frame.size.height;
+    for(NSUInteger i=0;i<count;i++){
+        UIButton *titleButton=[[UIButton alloc]init];
+        [titleView addSubview:titleButton];
+        titleButton.frame=CGRectMake(i*titleBtutonW, 0,titleBtutonW,titleButtonH);
+        [titleButton setTitle:titles[i] forState:UIControlStateNormal];
+    }
+}
+-(void)setupTitleUnderline{
+    
+}
+-(void)setupScrollview{
+    UIScrollView *scrollview=[[UIScrollView alloc]init];
+    scrollview.backgroundColor=[UIColor blueColor];
+    scrollview.frame=self.view.bounds;
+    [self.view addSubview:scrollview];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
