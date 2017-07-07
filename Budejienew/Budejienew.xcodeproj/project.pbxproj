@@ -46,6 +46,11 @@
 		84BF6E5C1F04AD120064D23C /* XMGSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BF6E5A1F04AD120064D23C /* XMGSquareCell.m */; };
 		84BF6E5D1F04AD120064D23C /* XMGSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BF6E5B1F04AD120064D23C /* XMGSquareCell.xib */; };
 		84BF6E601F04B20E0064D23C /* XMGSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BF6E5F1F04B20E0064D23C /* XMGSquareItem.m */; };
+		84BF6E831F06391B0064D23C /* XMGAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BF6E821F06391B0064D23C /* XMGAllViewController.m */; };
+		84BF6E861F0639340064D23C /* XMGPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BF6E851F0639340064D23C /* XMGPictureViewController.m */; };
+		84BF6E891F0639400064D23C /* XMGVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BF6E881F0639400064D23C /* XMGVideoViewController.m */; };
+		84BF6E8C1F0639500064D23C /* XMGVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BF6E8B1F0639500064D23C /* XMGVoiceViewController.m */; };
+		84BF6E8F1F06395D0064D23C /* XMGWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BF6E8E1F06395D0064D23C /* XMGWordViewController.m */; };
 		A1AF70DEFFB5DB68D1173C59 /* libPods-Budejienew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA287AA8D703B5CF0DE80D /* libPods-Budejienew.a */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +128,16 @@
 		84BF6E5B1F04AD120064D23C /* XMGSquareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGSquareCell.xib; sourceTree = "<group>"; };
 		84BF6E5E1F04B20E0064D23C /* XMGSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSquareItem.h; sourceTree = "<group>"; };
 		84BF6E5F1F04B20E0064D23C /* XMGSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGSquareItem.m; sourceTree = "<group>"; };
+		84BF6E811F06391B0064D23C /* XMGAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGAllViewController.h; sourceTree = "<group>"; };
+		84BF6E821F06391B0064D23C /* XMGAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGAllViewController.m; sourceTree = "<group>"; };
+		84BF6E841F0639340064D23C /* XMGPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPictureViewController.h; sourceTree = "<group>"; };
+		84BF6E851F0639340064D23C /* XMGPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPictureViewController.m; sourceTree = "<group>"; };
+		84BF6E871F0639400064D23C /* XMGVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGVideoViewController.h; sourceTree = "<group>"; };
+		84BF6E881F0639400064D23C /* XMGVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGVideoViewController.m; sourceTree = "<group>"; };
+		84BF6E8A1F0639500064D23C /* XMGVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGVoiceViewController.h; sourceTree = "<group>"; };
+		84BF6E8B1F0639500064D23C /* XMGVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGVoiceViewController.m; sourceTree = "<group>"; };
+		84BF6E8D1F06395D0064D23C /* XMGWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGWordViewController.h; sourceTree = "<group>"; };
+		84BF6E8E1F06395D0064D23C /* XMGWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGWordViewController.m; sourceTree = "<group>"; };
 		9B147FB9A732C03A46B4FC84 /* Pods-Budejienew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budejienew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Budejienew/Pods-Budejienew.debug.xcconfig"; sourceTree = "<group>"; };
 		E2C783C25BA4619F26CE5624 /* Pods-Budejienew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budejienew.release.xcconfig"; path = "Pods/Target Support Files/Pods-Budejienew/Pods-Budejienew.release.xcconfig"; sourceTree = "<group>"; };
 		E5AA287AA8D703B5CF0DE80D /* libPods-Budejienew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Budejienew.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,6 +265,16 @@
 			children = (
 				8478F43F1EFA3159004812EB /* XMGEssenceViewController.h */,
 				8478F4401EFA3159004812EB /* XMGEssenceViewController.m */,
+				84BF6E811F06391B0064D23C /* XMGAllViewController.h */,
+				84BF6E821F06391B0064D23C /* XMGAllViewController.m */,
+				84BF6E841F0639340064D23C /* XMGPictureViewController.h */,
+				84BF6E851F0639340064D23C /* XMGPictureViewController.m */,
+				84BF6E871F0639400064D23C /* XMGVideoViewController.h */,
+				84BF6E881F0639400064D23C /* XMGVideoViewController.m */,
+				84BF6E8A1F0639500064D23C /* XMGVoiceViewController.h */,
+				84BF6E8B1F0639500064D23C /* XMGVoiceViewController.m */,
+				84BF6E8D1F06395D0064D23C /* XMGWordViewController.h */,
+				84BF6E8E1F06395D0064D23C /* XMGWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -726,16 +751,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8478F4411EFA3159004812EB /* XMGEssenceViewController.m in Sources */,
+				84BF6E8F1F06395D0064D23C /* XMGWordViewController.m in Sources */,
 				8478F45A1EFB5D24004812EB /* XMGNavigationController.m in Sources */,
 				8478F46B1EFBBF5C004812EB /* XMGAdViewController.m in Sources */,
 				84BF6E4E1F03519F0064D23C /* XMGLoginViewController.m in Sources */,
+				84BF6E861F0639340064D23C /* XMGPictureViewController.m in Sources */,
 				8478F4571EFA74DD004812EB /* UIBarButtonItem+Item.m in Sources */,
 				8478F4441EFA316E004812EB /* XMGFriendTrendViewController.m in Sources */,
 				84BF6E601F04B20E0064D23C /* XMGSquareItem.m in Sources */,
+				84BF6E831F06391B0064D23C /* XMGAllViewController.m in Sources */,
+				84BF6E8C1F0639500064D23C /* XMGVoiceViewController.m in Sources */,
 				8478F44A1EFA31C3004812EB /* XMGMeTableViewController.m in Sources */,
 				257762351EFE0C330060ABD5 /* XMGSubTabItem.m in Sources */,
 				8478F4541EFA4B9F004812EB /* UIImage+Image.m in Sources */,
 				8478F43E1EFA30FB004812EB /* main.m in Sources */,
+				84BF6E891F0639400064D23C /* XMGVideoViewController.m in Sources */,
 				257762321EFE08AC0060ABD5 /* XMGSubTabTableViewController.m in Sources */,
 				84BF6E5C1F04AD120064D23C /* XMGSquareCell.m in Sources */,
 				8478F4641EFB602F004812EB /* XMGSettingTableViewController.m in Sources */,

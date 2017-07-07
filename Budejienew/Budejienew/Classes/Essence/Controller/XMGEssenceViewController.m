@@ -8,9 +8,16 @@
 
 #import "XMGEssenceViewController.h"
 #import "UIBarButtonItem+Item.h"
+
+#import "XMGAllViewController.h"
+#import "XMGVideoViewController.h"
+#import "XMGVoiceViewController.h"
+#import "XMGPictureViewController.h"
+#import "XMGWordViewController.h"
+
 #define xmg_w
 @interface XMGEssenceViewController ()
-
+@property (nonatomic,weak)UIButton *previousButton;
 @end
 
 @implementation XMGEssenceViewController
@@ -19,14 +26,23 @@
     
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor redColor];
+    [self setupAllChildVcs];
     [self setupNavBar];
     [self setupScrollview];
     [self setupTitleView];
     // Do any additional setup after loading the view.
 }
+- (void)setupAllChildVcs
+{
+    [self addChildViewController:[[XMGAllViewController alloc] init]];
+    [self addChildViewController:[[XMGVideoViewController alloc] init]];
+    [self addChildViewController:[[XMGVoiceViewController alloc] init]];
+    [self addChildViewController:[[XMGPictureViewController alloc] init]];
+    [self addChildViewController:[[XMGWordViewController alloc] init]];
+}
 -(void)setupTitleView{
     UIView *titleView=[[UIView alloc]init];
-    titleView.backgroundColor=[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    titleView.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
     
     titleView.frame=CGRectMake(0, 64, self.view.frame.size.width, 35);
     [self.view addSubview:titleView];
@@ -41,10 +57,17 @@
     CGFloat titleButtonH=titleView.frame.size.height;
     for(NSUInteger i=0;i<count;i++){
         UIButton *titleButton=[[UIButton alloc]init];
+        [titleButton addTarget:self action:@selector(titleBtn:) forControlEvents:UIControlEventTouchUpInside];
         [titleView addSubview:titleButton];
         titleButton.frame=CGRectMake(i*titleBtutonW, 0,titleBtutonW,titleButtonH);
         [titleButton setTitle:titles[i] forState:UIControlStateNormal];
+        [titleButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     }
+}
+-(void)titleBtn:(UIButton *)titleButton{
+    [self.previousButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    [titleButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    self.previousButton=titleButton;
 }
 -(void)setupTitleUnderline{
     
@@ -54,6 +77,18 @@
     scrollview.backgroundColor=[UIColor blueColor];
     scrollview.frame=self.view.bounds;
     [self.view addSubview:scrollview];
+    for(NSUInteger i=0;i<5;i++){
+        UIView *childvc=self.childViewControllers[i].view;
+        [scrollview addSubview:childvc];
+    }
+//    for(NSUInteger i=0;i<5;i++){
+//        UITableView *table=[[UITableView alloc]init];
+//        table.frame=CGRectMake(i*scrollview.frame.size.width, 0, scrollview.frame.size.width, scrollview.frame.size.height);
+//        [scrollview addSubview:table];
+//    }
+    scrollview.contentSize=CGSizeMake(5*scrollview.frame.size.width, 0);
+    
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
