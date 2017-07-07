@@ -79,6 +79,7 @@
     [self.view addSubview:scrollview];
     for(NSUInteger i=0;i<5;i++){
         UIView *childvc=self.childViewControllers[i].view;
+        childvc.frame=CGRectMake(i*scrollview.frame.size.width, 0, scrollview.frame.size.width, scrollview.frame.size.height);
         [scrollview addSubview:childvc];
     }
 //    for(NSUInteger i=0;i<5;i++){
