@@ -18,6 +18,8 @@
 #define xmg_w
 @interface XMGEssenceViewController ()
 @property (nonatomic,weak)UIButton *previousButton;
+@property (nonatomic,weak)UIScrollView *scrollview;
+@property(nonatomic,weak)UIView *titleview;
 @end
 
 @implementation XMGEssenceViewController
@@ -46,7 +48,7 @@
     
     titleView.frame=CGRectMake(0, 64, self.view.frame.size.width, 35);
     [self.view addSubview:titleView];
-    
+    self.titleview=titleView;
     [self setupTitleButtons:titleView];
     [self setupTitleUnderline];
 }
@@ -68,6 +70,11 @@
     [self.previousButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [titleButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     self.previousButton=titleButton;
+    [UIView animateWithDuration:0.25 animations:^{
+        NSUInteger index=[self.titleview.subviews indexOfObject:titleButton];
+        CGFloat offsetx= index * self.scrollview.frame.size.width;
+        self.scrollview.contentOffset=CGPointMake(offsetx, self.scrollview.contentOffset.y);
+    }];
 }
 -(void)setupTitleUnderline{
     
@@ -77,6 +84,7 @@
     scrollview.backgroundColor=[UIColor blueColor];
     scrollview.frame=self.view.bounds;
     [self.view addSubview:scrollview];
+    self.scrollview=scrollview;
     for(NSUInteger i=0;i<5;i++){
         UIView *childvc=self.childViewControllers[i].view;
         childvc.frame=CGRectMake(i*scrollview.frame.size.width, 0, scrollview.frame.size.width, scrollview.frame.size.height);
@@ -87,6 +95,7 @@
 //        table.frame=CGRectMake(i*scrollview.frame.size.width, 0, scrollview.frame.size.width, scrollview.frame.size.height);
 //        [scrollview addSubview:table];
 //    }
+    
     scrollview.contentSize=CGSizeMake(5*scrollview.frame.size.width, 0);
     
     
