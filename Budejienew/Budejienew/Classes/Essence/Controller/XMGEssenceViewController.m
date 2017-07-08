@@ -16,7 +16,7 @@
 #import "XMGWordViewController.h"
 
 #define xmg_w
-@interface XMGEssenceViewController ()
+@interface XMGEssenceViewController ()<UIScrollViewDelegate>
 @property (nonatomic,weak)UIButton *previousButton;
 @property (nonatomic,weak)UIScrollView *scrollview;
 @property(nonatomic,weak)UIView *titleview;
@@ -70,7 +70,7 @@
     [self.previousButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [titleButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     self.previousButton=titleButton;
-    [UIView animateWithDuration:0.25 animations:^{
+    [UIView animateWithDuration:1 animations:^{
         NSUInteger index=[self.titleview.subviews indexOfObject:titleButton];
         CGFloat offsetx= index * self.scrollview.frame.size.width;
         self.scrollview.contentOffset=CGPointMake(offsetx, self.scrollview.contentOffset.y);
@@ -83,6 +83,7 @@
     UIScrollView *scrollview=[[UIScrollView alloc]init];
     scrollview.backgroundColor=[UIColor blueColor];
     scrollview.frame=self.view.bounds;
+    scrollview.delegate=self;
     [self.view addSubview:scrollview];
     self.scrollview=scrollview;
     for(NSUInteger i=0;i<5;i++){
@@ -100,6 +101,10 @@
     
     
 }
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    NSLog(@"%d",22);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
